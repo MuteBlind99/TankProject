@@ -1,0 +1,67 @@
+{
+    "name": "TankControl",
+    "maps": [
+        {
+            "name": "Tank",
+            "id": "41f7488b-c341-408d-baa3-50e03d53002d",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "cf1d18d7-705a-4c0a-8ae0-d4857bb892b4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "50ad3039-3fbd-498a-b137-a5970a79d35b",
+                    "path": "<Keyboard>/w",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c137e0c1-eb2d-49d8-b3d5-205b2a1dcac3",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4c040e2-6a86-4420-9a2e-218ae112870a",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b1e11417-12ad-4919-a23b-b30de98cad76",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
