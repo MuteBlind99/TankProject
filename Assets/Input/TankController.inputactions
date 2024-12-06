@@ -37,8 +37,8 @@
                 {
                     "name": "",
                     "id": "d0db9a0a-6a74-41ec-adc8-fcec6e31f4a4",
-                    "path": "<Gamepad>/leftStick/x",
-                    "interactions": "",
+                    "path": "<Gamepad>/rightStick/x",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": "",
                     "action": "SpinLeftRight",
@@ -81,7 +81,7 @@
                 {
                     "name": "",
                     "id": "805fd442-9bbf-4879-954a-5a24f11e363e",
-                    "path": "<Gamepad>/rightTrigger",
+                    "path": "<Gamepad>/leftStick/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -126,6 +126,17 @@
                     "name": "",
                     "id": "a5c91f51-4257-425b-b5b9-e131eb1550fc",
                     "path": "<Keyboard>/space",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a1646f9-022f-48a9-baba-8d5dae59618c",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
