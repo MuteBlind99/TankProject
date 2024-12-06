@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
         // Get rigidbody
         GetComponent<Rigidbody>().linearVelocity = transform.forward * bulletForce;
         // Destroy after 2 seconds
-        Destroy(gameObject,2);
+        Destroy(gameObject,5);
     }
 
     private void OnCollisionEnter(Collision other)
