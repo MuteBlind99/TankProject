@@ -43,7 +43,7 @@ public class TankMovementsimple : MonoBehaviour
         //     // ReSharper disable once Unity.InefficientMultiplicationOrder
         //     transform.Rotate(Vector3.up* _spinSpeed * Time.deltaTime, Space.Self);
         // }
-        _rigidbody.AddRelativeTorque(0,_spinInput * _spinForce, 0);
+        transform.Rotate(0f, _spinInput * _spinSpeed * Time.deltaTime, 0f);    
     }
     
 

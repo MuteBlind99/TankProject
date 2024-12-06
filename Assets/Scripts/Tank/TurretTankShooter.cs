@@ -1,14 +1,17 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Object = UnityEngine.Object;
 
-public class Shooter : MonoBehaviour
+public class TurretTankShooter : MonoBehaviour
 {
     [SerializeField] private float fireRate = 0.5f;
     [SerializeField] private Projectile bullet;
     [SerializeField] private Transform firePoint;
-    
+
     private Coroutine shoot_routine = null;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,4 +48,6 @@ public class Shooter : MonoBehaviour
             shoot_routine = null;
         }
     }
+
+   
 }

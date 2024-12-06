@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
         // Get rigidbody
         GetComponent<Rigidbody>().linearVelocity = transform.forward * bulletForce;
         // Destroy after 2 seconds
-        Destroy(gameObject, 2);
+        Destroy(gameObject,2);
     }
 
     private void OnCollisionEnter(Collision other)
@@ -26,25 +26,26 @@ public class Projectile : MonoBehaviour
 
         if (other.gameObject.TryGetComponent(out Destructible objective))
         {
-            objective.TakeDamage(5);
+            objective.TakeDamage(10);
+            Destroy(gameObject);
         }
         
     }
 
-    private void OnCollisionStay(Collision other)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void OnCollisionExit(Collision other)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        throw new NotImplementedException();
-    }
+    // private void OnCollisionStay(Collision other)
+    // {
+    //     throw new NotImplementedException();
+    // }
+    //
+    // private void OnCollisionExit(Collision other)
+    // {
+    //     throw new NotImplementedException();
+    // }
+    //
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     throw new NotImplementedException();
+    // }
 
     // Update is called once per frame
     void Update()
