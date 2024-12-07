@@ -12,7 +12,7 @@ public class TurretRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.leftArrowKey.isPressed|| Gamepad.current.leftShoulder.IsPressed())
+        if (Keyboard.current.leftArrowKey.isPressed || Gamepad.current.leftShoulder.IsPressed())
         {
             // ReSharper disable once Unity.InefficientMultiplicationOrder
             transform.Rotate(Vector3.down * rotationSpeed * Time.deltaTime, Space.Self);

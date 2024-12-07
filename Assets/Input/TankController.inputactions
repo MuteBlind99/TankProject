@@ -31,13 +31,22 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "SpinTurretLR",
+                    "type": "Value",
+                    "id": "3edaef9b-a608-46d8-885c-7ac42f64020a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "d0db9a0a-6a74-41ec-adc8-fcec6e31f4a4",
-                    "path": "<Gamepad>/rightStick/x",
+                    "path": "<Gamepad>/leftStick/x",
                     "interactions": "Hold",
                     "processors": "",
                     "groups": "",
@@ -143,6 +152,50 @@
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3c2b8586-3331-4f79-bd11-6add1bba9139",
+                    "path": "<Gamepad>/rightStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpinTurretLR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "6c91ddd1-60fa-4122-bb8f-452a4c597d50",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpinTurretLR",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "348f53e4-5c10-4e3a-9065-4d2a7316dc36",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpinTurretLR",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "32c21369-d4e3-494e-907e-67356ec2ec51",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpinTurretLR",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }

@@ -29,7 +29,6 @@ public class Projectile : MonoBehaviour
             objective.TakeDamage(10);
             Destroy(gameObject);
         }
-        
     }
 
     // private void OnCollisionStay(Collision other)

@@ -4,8 +4,10 @@ public class Destructible : MonoBehaviour
 {
 
     [SerializeField] private int startHp = 50;
+    [SerializeField] private GameObject shooter;
 
     private int _hp;
+    public bool _isDead = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,7 +27,8 @@ public class Destructible : MonoBehaviour
         if (_hp <= 0)
         {
             // Kaboom
-            Destroy(gameObject, 1);
+            _isDead = true;
+            Destroy(shooter, 0.2f);
         }
     }
     
